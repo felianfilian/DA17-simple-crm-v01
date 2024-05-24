@@ -13,5 +13,4 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 })
 export class AppComponent {
   title = 'DA17-simple-crm-v01';
-  showFiller = false;
 }

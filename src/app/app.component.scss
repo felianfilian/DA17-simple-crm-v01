@@ -17,6 +17,11 @@ mat-toolbar-row {
   filter: drop-shadow(0, 0, 8px, #fff);
 }
 
+.btn-menu:focus {
+  border: 0;
+  outline: none;
+}
+
 .sidenav-main {
   width: 300px;
 

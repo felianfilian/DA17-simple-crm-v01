@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [MatIcon],
   templateUrl: './user.component.html',
-  styleUrl: './user.component.scss'
+  styleUrl: './user.component.scss',
 })
-export class UserComponent {
-
-}
+export class UserComponent {}

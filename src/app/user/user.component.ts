@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-user',
@@ -12,7 +12,7 @@ import { MatDialogModule } from '@angular/material/dialog';
   styleUrl: './user.component.scss',
 })
 export class UserComponent {
-  constructor(public dialog: MatDialogModule) {}
+  constructor(public dialog: MatDialog) {}
 
   openDialog() {
     alert('test');

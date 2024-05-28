@@ -13,8 +13,17 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class UserComponent {
   constructor(public dialog: MatDialog) {}
+  name = 'mario';
+  animal = 'yoshi';
 
   openDialog() {
-    alert('test');
+    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+      data: { name: this.name, animal: this.animal },
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('The dialog was closed');
+      this.animal = result;
+    });
   }
 }

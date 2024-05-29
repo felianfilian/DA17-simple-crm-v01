@@ -4,7 +4,11 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import { MatDialogModule } from '@angular/material/dialog';
+import {
+  MatDialogActions,
+  MatDialogContent,
+  MatDialogModule,
+} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +22,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatSidenavModule,
     MatIconModule,
     MatDialogModule,
+    MatDialogActions,
+    MatDialogContent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -7,10 +7,13 @@ import {
   MatDialogModule,
 } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { provideNativeDateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-user-dialog',
   standalone: true,
+  providers: [provideNativeDateAdapter()],
   imports: [
     MatDialogModule,
     MatDialogActions,
@@ -18,6 +21,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
+    MatDatepickerModule,
   ],
   templateUrl: './user-dialog.component.html',
   styleUrl: './user-dialog.component.scss',

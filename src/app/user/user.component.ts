@@ -3,11 +3,12 @@ import { MatIcon } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialog } from '@angular/material/dialog';
+import { UserDialogComponent } from '../user-dialog/user-dialog.component';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [MatButtonModule, MatIcon, MatTooltipModule],
+  imports: [MatButtonModule, MatIcon, MatTooltipModule, UserDialogComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.scss',
 })
@@ -17,5 +18,6 @@ export class UserComponent {
   animal = 'yoshi';
 
   openDialog() {
-    this.dialog.open(UserComponent);
+    this.dialog.open(UserDialogComponent);
+  }
 }

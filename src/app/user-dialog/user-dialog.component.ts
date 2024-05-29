@@ -6,6 +6,7 @@ import {
   MatDialogContent,
   MatDialogModule,
 } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-user-dialog',
@@ -16,6 +17,7 @@ import {
     MatDialogContent,
     MatButtonModule,
     MatInputModule,
+    MatFormFieldModule,
   ],
   templateUrl: './user-dialog.component.html',
   styleUrl: './user-dialog.component.scss',

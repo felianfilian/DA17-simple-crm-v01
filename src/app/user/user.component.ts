@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialog } from '@angular/material/dialog';
 import { UserDialogComponent } from '../user-dialog/user-dialog.component';
+import { User } from '../models/user.class';
 
 @Component({
   selector: 'app-user',
@@ -16,6 +17,8 @@ export class UserComponent {
   constructor(public dialog: MatDialog) {}
   name = 'mario';
   animal = 'yoshi';
+
+  user: User = new User();
 
   openDialog() {
     this.dialog.open(UserDialogComponent);

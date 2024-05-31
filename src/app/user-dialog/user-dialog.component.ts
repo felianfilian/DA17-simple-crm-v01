@@ -9,6 +9,7 @@ import {
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { provideNativeDateAdapter } from '@angular/material/core';
+import { User } from '../models/user.class';
 
 @Component({
   selector: 'app-user-dialog',
@@ -26,4 +27,6 @@ import { provideNativeDateAdapter } from '@angular/material/core';
   templateUrl: './user-dialog.component.html',
   styleUrl: './user-dialog.component.scss',
 })
-export class UserDialogComponent {}
+export class UserDialogComponent {
+  user: User = new User();
+}

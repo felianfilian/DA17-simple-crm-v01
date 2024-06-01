@@ -29,4 +29,8 @@ import { User } from '../models/user.class';
 })
 export class UserDialogComponent {
   user: User = new User();
+
+  saveUser() {
+    alert('user saved\nname:' + this.user.firstName);
+  }
 }

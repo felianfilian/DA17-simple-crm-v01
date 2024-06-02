@@ -15,8 +15,6 @@ import { User } from '../models/user.class';
 })
 export class UserComponent {
   constructor(public dialog: MatDialog) {}
-  name = 'mario';
-  animal = 'yoshi';
 
   user: User = new User();
 
